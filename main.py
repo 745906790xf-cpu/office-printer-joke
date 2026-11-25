@@ -1,12 +1,15 @@
 """Make the AI Judge Laugh entry for make.fun.
 
-Writes one office-life joke to /output/entry.txt. The sandbox runs this
-program twice and both runs must write the same bytes, so the joke is a
-fixed string with no randomness, clock, or network access.
+Writes one office-life joke to /output/entry.txt. The joke is 82
+characters on one line, inside the gate's 1-200 character window. The
+sandbox runs this program twice and both runs must write the same bytes,
+so the joke is a fixed string with no randomness, clock, or network access.
 """
 
 import os
 
+# The joke: a true office observation (the printer always jams on the
+# urgent job) with a surprising last word. One line, 82 characters.
 JOKE = "The office printer only jams on urgent documents, which is how I know it can read."
 
 
